@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { getUser, resetUserSession } from "../service/AuthService";
+import { resetUserSession } from "../service/AuthService";
 import "../styles/navbar.scss";
 
 function Navbar(props) {
@@ -36,7 +36,7 @@ function Navbar(props) {
               {location.pathname === "/create-application" ? (
                 <>
                   <li>
-                    <a href="#" onClick={logoutHandler}>
+                    <a href={"login"} onClick={logoutHandler}>
                       Logout
                     </a>
                   </li>

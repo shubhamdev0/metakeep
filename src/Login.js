@@ -64,7 +64,6 @@ const Login = (props) => {
             <fieldset>
               <input
                 placeholder="Password"
-                type="password"
                 tabIndex="4"
                 required
                 type="password"
