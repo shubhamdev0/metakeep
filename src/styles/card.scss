@@ -1,0 +1,75 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
+  background-image: linear-gradient(to right top, #511b73, #6c2990, #8838af, #a648ce, #c557ed);
+}
+.card-container {
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 1px 1px 27px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.float-layout {
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.card {
+  //color: black;
+  min-height: 100%; /*replace this it in width: 100%*/
+  width: 50%;
+  //float: right;
+}
+
+.card-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.card-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/*add this it*/
+.card-image {
+  display: flex;
+}
+/*-------------*/
+
+div.card-image img {
+  width: 50%;
+  height: auto;
+}
+
+/* Phone Devices Query */
+@media only screen and (max-width: 37.5em) {
+  div.card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*add this it*/
+  .card-image {
+    flex-direction: column;
+  }
+  /*----------------------*/
+
+  .card {
+    width: 100%;
+    margin-top: -4px;
+  }
+}
